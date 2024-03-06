@@ -408,7 +408,7 @@ button{
     margin-bottom: 15px;
 }
 .default-btn{
-    background-color: #00c99c;
+    background-color: #004AAD;
     text-transform: uppercase;
     font-family: "Work Sans",sans-serif;
     color: #fff;
@@ -419,11 +419,11 @@ button{
     display: inline-block;
     letter-spacing: 0.5px;
     padding: 0 40px;
-    -webkit-box-shadow: 0 3px 10px rgba(0, 201, 156, 0.5);
-    box-shadow: 0 3px 10px rgba(0, 201, 156, 0.5);
+    -webkit-box-shadow: 0 3px 10px rgba(85, 17, 212, 0.5);
+    box-shadow: 0 3px 10px rgba(30, 0, 201, 0.5);
 }
 .default-btn:hover{
-    background-color: #00c99c;
+    background-color: #3548d4;
     color: #fff;
     box-shadow: none;
     transition: all .3s ease-in-out;

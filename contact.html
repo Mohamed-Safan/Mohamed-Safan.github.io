@@ -75,67 +75,72 @@
 		
         <div class="header-height"></div>
         
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Dynamic%20Layers&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:350px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:100%;}</style></div>
-		
-		<section class="contact-section padding">
-            <div class="map"></div>
-		    <div class="container">
-		        <div class="contact-wrap d-flex align-items-center row">
-                    <div class="col-lg-6 sm-padding">
-                        <div class="contact-info">
-                            <h2>ZAAS Labs: Empowering Innovation Worldwide</h2>
-                            <p>Founded in 2024, ZAAS Labs is a leading software development company serving clients globally.</p>
-                            <p>No 13, IDH Road Colombo, Sri Lanka</p>
-                            <span>hello@zaaslabs.com</span>
-                            <br>
-                            <span>+94 772125417</span>
-                            <br>
-                            <span>+94 774636961</span>
-                            <br>
-                            <span>+44 7384784349</span>
-                        </div>
-                        
-		            </div>
-		            <div class="col-lg-6 sm-padding">
-		                <div class="contact-form">
-                            <form action="contact.php" method="post" id="ajax_form" class="form-horizontal">
-                                <div class="form-group colum-row row">
-                                    <div class="col-sm-6">
-                                        <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="100%" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Kolannawa,%20Colombo,%20Sri%20Lanka&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://www.emojilib.com"></a>
+            </div>
+            <style>
+                .mapouter {
+                    position:relative;
+                    text-align:right;
+                    height:350px;
+                    width:100%;
+                }
+                .gmap_canvas {
+                    overflow:hidden;
+                    background:none!important;
+                    height:350px;
+                    width:100%;
+                }
+            </style>
+        </div>
+        
+		<section class="contact-section padding" style="background-color: #f4f4f4;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 col-sm-12">
+                        <div class="contact-form" style="background-color: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); text-align: center;">
+                            <h2 style="color: #03ADF3; font-size: 28px; font-weight: bold; margin-bottom: 30px;">Fill This Form</h2>
+                            <p style="color: #666; margin-bottom: 30px;">We will get back to you within 24 hours.</p>
+                            <form action="contact.php" method="post" id="ajax_form">
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="Name" required style="border-radius: 5px; padding: 15px; border: 1px solid #ccc;">
                                     </div>
-                                    <div class="col-sm-6">
-                                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                                    <div class="col-md-6">
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required style="border-radius: 5px; padding: 15px; border: 1px solid #ccc;">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-12">
-                                        <input id="Country" name="Country" cols="30" rows="5" class="form-control" placeholder="Country" required>
+                                        <input id="Country" name="Country" class="form-control" placeholder="Country" required style="border-radius: 5px; padding: 15px; border: 1px solid #ccc;">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-12">
-                                        <input id="mobileNumber" name="Mobile No" cols="30" rows="5" class="form-control" placeholder="Mobile No" required>
+                                        <input id="mobileNumber" name="Mobile No" class="form-control" placeholder="Mobile No" required style="border-radius: 5px; padding: 15px; border: 1px solid #ccc;">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-12">
-                                        <textarea id="message" name="message" cols="30" rows="5" class="form-control message" placeholder="Message" required></textarea>
+                                        <textarea id="message" name="message" class="form-control message" placeholder="Message" required style="border-radius: 5px; padding: 15px; border: 1px solid #ccc;"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-12">
-                                        <button id="submit" class="default-btn btn-blue" type="submit">Send Message</button>
+                                        <button id="submit" class="default-btn btn-blue" type="submit" style="border-radius: 5px; padding: 15px; background-color: #004AAD; color: #fff; border: none;">Send Message</button>
                                     </div>
                                 </div>
                                 <div id="form-messages" class="alert" role="alert"></div>
                             </form>
                         </div>
-		            </div>
-		        </div>
-		    </div>
-		</section><!--/. contact-section -->
-       
-      	
+                    </div>
+                </div>
+            </div>
+        </section><!--/. contact-section -->
+        
+         
         <section class="widget-section bg-dark padding">
             <div class="left-design"></div>
             <div class="right-design"></div>
@@ -187,10 +192,10 @@
                  </div>
              </div>
          </section><!--/.widget-section-->
-        
+
          <footer class="footer-section bg-dark align-center">
 			<div class="container">
-				<p>&copy; <script> document.write(new Date().getFullYear())</script> All rights recived, Designed by <a href="https://zaaslabs.com" target="_blank">ZaasLabs</a></p>
+				<p>&copy; <script> document.write(new Date().getFullYear())</script> All rights recived, Designed by <a href="https://zaaslabs.com">ZaasLabs</a></p>
 			</div>
 		</footer><!-- /.footer-section -->
 
