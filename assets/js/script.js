@@ -76,12 +76,12 @@ function renderMovies(movies) {
     const imageContainer = document.createElement('div');
     imageContainer.classList.add('image-container');
     const imageElement = document.createElement('img');
-    imageElement.src = show.image ? show.image.medium : 'placeholder-image.jpg'; // Use a placeholder image if image is not available
+    imageElement.src = show.image ? show.image.medium : 'placeholder-image.jpg';
     const cancelIcon = document.createElement('span');
-    cancelIcon.innerHTML = '&#10006;'; // Unicode character for cancel icon
+    cancelIcon.innerHTML = '&#10006;'; 
     cancelIcon.classList.add('cancel-icon');
     cancelIcon.addEventListener('click', () => {
-      movieElement.remove(); // Remove the movie from the grid when the cancel icon is clicked
+      movieElement.remove(); 
     });
     imageContainer.appendChild(imageElement);
     imageContainer.appendChild(cancelIcon);
@@ -96,21 +96,21 @@ function renderMovies(movies) {
   });
 }
 
-// Load default movies when the page loads
+
 window.addEventListener('load', async () => {
   const defaultMovies = await fetchDefaultMovies();
-  renderMovies(defaultMovies.slice(0, 8)); // Display the first eight movies
+  renderMovies(defaultMovies.slice(0, 8));
 });
 
-// Event listener for search input
+
 searchInput.addEventListener('input', async (event) => {
   const query = event.target.value;
   if (query.length > 2) {
     const response = await fetch(`https://api.tvmaze.com/search/shows?q=${query}`);
     const data = await response.json();
-    renderMovies(data.slice(0, 8)); // Display the first eight search results
+    renderMovies(data.slice(0, 8)); 
   } else {
     const defaultMovies = await fetchDefaultMovies();
-    renderMovies(defaultMovies.slice(0, 8)); // Display the first eight default movies
+    renderMovies(defaultMovies.slice(0, 8));
   }
 });
